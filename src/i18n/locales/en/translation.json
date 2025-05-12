@@ -1,4 +1,6 @@
 {
-  "welcome": "Welcome",
-  "description": "This is an example React app using i18n"
+  "SelectSkipPage": {
+    "ChooseYourSkipSize": "Choose Your Skip Size",
+    "SelectYourSkipSizeThatBestSuitsYourNeeds": "Select the skip size that best suits your needs"
+  }
 }
