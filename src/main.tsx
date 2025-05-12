@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client';
 
 import './index.css';
 import App from './App.tsx';
-import './i18n'; // 👈 import your i18n config
+import './i18n';
+import './styles/globals.scss';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
