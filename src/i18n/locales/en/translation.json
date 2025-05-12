@@ -2,5 +2,10 @@
   "SelectSkipPage": {
     "ChooseYourSkipSize": "Choose Your Skip Size",
     "SelectYourSkipSizeThatBestSuitsYourNeeds": "Select the skip size that best suits your needs"
+  },
+  "SkipCard": {
+    "DayHirePeriod": "day hire period",
+    "YardSkip": "Yard Skip",
+    "Yards": "Yards"
   }
 }

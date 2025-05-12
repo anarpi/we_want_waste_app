@@ -1,0 +1,65 @@
+@use '../../../styles/variables.scss' as *;
+
+.image_holder {
+  height: 11rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 0.5rem;
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+.card {
+  // padding: 1rem
+}
+
+.card_holder {
+  position: relative;
+  padding: 0.5rem;
+  background: $gray-color;
+  border-radius: 0.5rem;
+  border: $light-gray-color solid 2px;
+
+  &:hover {
+    border: $accent-color solid 1px;
+    cursor: pointer;
+  }
+}
+
+.selected {
+  border: $accent-color solid 2px;
+
+  &:hover {
+    border: $accent-color solid 2px;
+  }
+}
+
+.text_holder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h3,
+  p {
+    text-align: left;
+  }
+}
+
+.floating_text {
+  height: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: $accent-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 0.5rem;
+}

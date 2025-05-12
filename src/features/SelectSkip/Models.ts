@@ -1,3 +1,46 @@
+
+/* eslint-disable */
+const SkipContainerImages = {
+  '4': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/4-yarder-skip.jpg',
+  '5': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg',
+  '6': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/6-yarder-skip.jpg',
+  '8': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/8-yarder-skip.jpg',
+  '10': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/10-yarder-skip.jpg',
+  '12': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/12-yarder-skip.jpg',
+  '14': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/14-yarder-skip.jpg',
+  '16': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/16-yarder-skip.jpg',
+  '20': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/20-yarder-skip.jpg',
+  '40': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/40-yarder-skip.jpg',
+};
+/* eslint-enable */
+
+export const GetSkipContainerImageBySize = (size: string): string | null => {
+
+  switch (size) {
+    case '4':
+      return SkipContainerImages['4'];
+    case '5':
+      return SkipContainerImages['5'];
+    case '6':
+      return SkipContainerImages['6'];
+    case '8':
+      return SkipContainerImages['8'];
+    case '10':
+      return SkipContainerImages['10'];
+    case '12':
+      return SkipContainerImages['12'];
+    case '14':
+      return SkipContainerImages['14'];
+    case '16':
+      return SkipContainerImages['16'];
+    case '20':
+      return SkipContainerImages['20'];
+    case '40':
+      return SkipContainerImages['40'];
+  }
+  return null;
+};
+
 export const SelectSkipDefaultData = [
   {
     'id': 17933,
