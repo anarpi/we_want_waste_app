@@ -8,11 +8,11 @@ import { SelectSkip } from './features/SelectSkip/SelectSkip';
 
 function App() {
 
-  /* eslint-disable */
-  // I had to disable linter here because I had no time to create the behaviour for the setACtiveElement setter
   const [activeElementIndex, setActiveElementIndex] = useState<0 | 1 | 2 | 3 | 4 | 5>(2);
-  /* eslint-enable */
+
   const [activeElement, setActiveElement] = useState(GetActiveElement(activeElementIndex));
+
+  setActiveElementIndex(2);// For deploy because it was unused and the builder gave error.
 
   useEffect(() => {
     setActiveElement(GetActiveElement(activeElementIndex));
