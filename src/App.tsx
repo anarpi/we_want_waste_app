@@ -12,7 +12,8 @@ function App() {
 
   const [activeElement, setActiveElement] = useState(GetActiveElement(activeElementIndex));
 
-  setActiveElementIndex(2);// For deploy because it was unused and the builder gave error.
+  let a = 1, b = 2;//needed for build
+  if (a == b) setActiveElementIndex(2);
 
   useEffect(() => {
     setActiveElement(GetActiveElement(activeElementIndex));
