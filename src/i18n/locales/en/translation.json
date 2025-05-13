@@ -9,5 +9,9 @@
     "SelectThisSkip": "Select this skip",
     "YardSkip": "Yard Skip",
     "Yards": "Yards"
+  },
+  "SummaryFooter": {
+    "Back": "Back",
+    "Continue": "Continue"
   }
 }

@@ -1,5 +1,7 @@
 
 /* eslint-disable */
+// I had to disable the linter here because the url is too long
+// and the key should be the numbers to not to make the code more complicated
 const SkipContainerImages = {
   '4': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/4-yarder-skip.jpg',
   '5': 'https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg',

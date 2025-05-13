@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { SelectSkipDefaultData, GetSkipContainerImageBySize } from './Models';
 import styles from './SelectSkip.module.scss';
 import { SkipCard } from '../../components/cards/SkipCard/SkipCard';
+import { SummaryFooter } from '../../components/footers/SummaryFooter/SummaryFooter';
 
 export const SelectSkip = () => {
 
@@ -11,6 +12,18 @@ export const SelectSkip = () => {
   const skips = SelectSkipDefaultData;
 
   const [selectedId, setSelectedId] = useState<number | null>(null);
+  /* eslint-disable */
+  // I had to disable linter here because I had no time to create a specific type for skips
+  // If later I have time I will do it and remove the eslint-disable
+  const [selectedSkip, setSelectedSkip] = useState<any | null>(null);
+  /* eslint-enable */
+
+  useEffect(
+    () => {
+      setSelectedSkip(skips.find((skip) => skip.id === selectedId));
+    },
+    [selectedId, skips]
+  );
 
   return (
     <div>
@@ -29,6 +42,14 @@ export const SelectSkip = () => {
           />
         ))}
       </div>
+      {
+        selectedId !== null
+        && <SummaryFooter
+          skipSize={selectedSkip?.size}
+          priceBeforeVat={selectedSkip?.priceBeforeVat}
+          hirePeriodDays={selectedSkip?.hirePeriodDays}
+        />
+      }
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import noImage from '../../../assets/no_image.jpg';
 import styles from './SkipCard.module.scss';
-import { Button } from './buttons/Button/Button';
+import { Button } from '../../buttons/Button/Button';
 
 type CardProps = {
   size: number;
