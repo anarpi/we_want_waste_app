@@ -5,6 +5,8 @@
   },
   "SkipCard": {
     "DayHirePeriod": "day hire period",
+    "Selected": "Selected",
+    "SelectThisSkip": "Select this skip",
     "YardSkip": "Yard Skip",
     "Yards": "Yards"
   }

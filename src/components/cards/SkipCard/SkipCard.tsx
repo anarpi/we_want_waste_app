@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import noImage from '../../../assets/no_image.jpg';
 import styles from './SkipCard.module.scss';
+import { Button } from './buttons/Button/Button';
 
 type CardProps = {
   size: number;
@@ -25,6 +26,16 @@ export const SkipCard = (
   priceText += priceBeforeVat;
   priceText += !currencyInFront ? ' ' + currencyCode : '';
 
+  const selectButtonText = isSelected
+    ? t('SkipCard.Selected')
+    : t('SkipCard.SelectThisSkip');
+
+  let buttonClassName = styles.select_button;
+  if (!isSelected) {
+    buttonClassName += ` ${styles.arrow}`;
+    buttonClassName += ` ${styles.not_selected_button}`;
+  };
+
   return (
     <div
       className={`${styles.card_holder} ${isSelected ? styles.selected : ''}`}
@@ -43,6 +54,11 @@ export const SkipCard = (
           <p className="accent-text">{priceText}</p>
         </div>
       </div>
+      <Button
+        className={buttonClassName}
+        text={selectButtonText}
+        onClick={onSelect}
+      />
     </div>
   );
 };

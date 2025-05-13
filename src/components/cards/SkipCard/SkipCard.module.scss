@@ -63,3 +63,16 @@
   padding: 5px;
   border-radius: 0.5rem;
 }
+
+.arrow::after {
+  content: '→';
+  margin-left: 0.5rem;
+}
+
+.select_button {
+  width: 100%;
+}
+
+.not_selected_button {
+  background-color: $light-gray-color !important;
+}
