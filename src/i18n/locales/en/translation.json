@@ -5,6 +5,8 @@
   },
   "SkipCard": {
     "DayHirePeriod": "day hire period",
+    "NotAllowedForHeavyWaste": "Not Suitable for Heavy Waste",
+    "NotAllowedOnRoad": "Not Allowed On The Road",
     "Selected": "Selected",
     "SelectThisSkip": "Select this skip",
     "YardSkip": "Yard Skip",
@@ -13,5 +15,13 @@
   "SummaryFooter": {
     "Back": "Back",
     "Continue": "Continue"
+  },
+  "SelectionStepsHeader": {
+    "ChooseDate": "Choose Date",
+    "Payment": "Payment",
+    "PermitCheck": "Permit Check",
+    "Postcode": "Postcode",
+    "SelectSkip": "Select Skip",
+    "WasteType": "Waste Type"
   }
 }

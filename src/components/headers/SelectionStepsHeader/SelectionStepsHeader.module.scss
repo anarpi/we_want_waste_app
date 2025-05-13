@@ -1,0 +1,13 @@
+.selection_steps_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  min-width: 4rem;
+  max-width: 10%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 0 1rem;
+}

@@ -39,6 +39,8 @@ export const SelectSkip = () => {
             imageUrl={GetSkipContainerImageBySize(skip.size.toString()) ?? null}
             onSelect={() => setSelectedId(skip.id)}
             isSelected={selectedId === skip.id}
+            allowedOnRoad={skip.allowedOnRoad}
+            allowsHeavyWaste={skip.allowsHeavyWaste}
           />
         ))}
       </div>

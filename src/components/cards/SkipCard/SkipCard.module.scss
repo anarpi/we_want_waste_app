@@ -15,10 +15,6 @@
   }
 }
 
-.card {
-  // padding: 1rem
-}
-
 .card_holder {
   position: relative;
   padding: 0.5rem;
@@ -29,6 +25,18 @@
   &:hover {
     border: $accent-color solid 1px;
     cursor: pointer;
+  }
+}
+
+.disabled_card {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+  user-select: none;
+
+  &:hover {
+    border: $light-gray-color solid 2px;
+    cursor: not-allowed;
   }
 }
 
@@ -62,6 +70,28 @@
   justify-content: center;
   padding: 5px;
   border-radius: 0.5rem;
+}
+
+.warning_holder {
+  height: 2rem;
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+  padding: 5px;
+  gap: 0.25rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: $base-color;
+    border-radius: 0.5rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+    margin: 0.25rem;
+  }
 }
 
 .arrow::after {
